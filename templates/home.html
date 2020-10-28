@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>First Flask App</title>
+    <title>Dijkstra's on Bay Area with OSMID</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script></head><script>function myFunction() {
 var text1= $('#text1').val();
 var text2= $('#text2').val();
@@ -16,7 +16,7 @@ var text2= $('#text2').val();
                 response =response.result;
                 $.each(response,function(key,val){
                 console.log(val);
-                  html+="<p>"+val+"<p>"                
+                  html+="<p>"+val+"<p>"
                 });
                 html +="<br>";
                 $(".show-data").append(html);
@@ -24,9 +24,9 @@ var text2= $('#text2').val();
 };  </script>
 <body>
     <p>
-        Taking input from web<br><br>
-        Text_Value1<input type="text" id="text1" name="text1"><br><br>
-        Text_Value2<input type="text" id="text2" name="text2"><br><br>
+        Please put 2 OSMID values here:<br><br>
+        Origin<input type="text" id="text1" name="text1"><br><br>
+        Destination<input type="text" id="text2" name="text2"><br><br>
             <button id="clicked" onclick="myFunction()">Submit</button>
         </p>
     <div class="show-data" >    </div>
